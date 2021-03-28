@@ -1,0 +1,27 @@
+<!Doctype>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Spring Framework Lerning</title>
+
+</head>
+<body>
+    <h1>Book List</h1>
+
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Second name</th>
+        </tr>
+        <tr th:each="author : ${authors}">
+            <td th:text="${author.id}">123</td>
+            <td th:text="${author.firstName}">Joe</td>
+            <td th:text="${author.lastName}">Kapahala</td>
+        </tr>>
+
+    </table>
+
+</body>
+</html>
